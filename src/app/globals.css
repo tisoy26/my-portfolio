@@ -24,3 +24,127 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Animation for profile image gradient */
+@keyframes gradient-xy {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-gradient-xy {
+  background-size: 400% 400%;
+  animation: gradient-xy 15s ease infinite;
+}
+
+/* Animation for background beam pulse */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Orbit container and animation */
+.orbit-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 0 0;
+  transform: rotate(var(--rotate, 0deg)) translateX(140px);
+  animation: orbit 20s linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.tech-logo {
+  transform-origin: 0 0;
+  animation-duration: 20s;
+}
+
+.tech-logo > div {
+  transform: translateX(-50%) translateY(-50%) rotate(calc(-1 * var(--rotate, 0deg)));
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.tech-logo > div:hover {
+  transform: translateX(-50%) translateY(-50%) rotate(calc(-1 * var(--rotate, 0deg))) scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Grid background with circulating colors */
+@keyframes grid-color-cycle {
+  0% {
+    background-image: 
+      linear-gradient(to right, rgba(59, 130, 246, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(59, 130, 246, 0.3) 1px, transparent 1px);
+  }
+  20% {
+    background-image: 
+      linear-gradient(to right, rgba(139, 92, 246, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 92, 246, 0.3) 1px, transparent 1px);
+  }
+  40% {
+    background-image: 
+      linear-gradient(to right, rgba(236, 72, 153, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(236, 72, 153, 0.3) 1px, transparent 1px);
+  }
+  60% {
+    background-image: 
+      linear-gradient(to right, rgba(234, 179, 8, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(234, 179, 8, 0.3) 1px, transparent 1px);
+  }
+  80% {
+    background-image: 
+      linear-gradient(to right, rgba(5, 150, 105, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(5, 150, 105, 0.3) 1px, transparent 1px);
+  }
+  100% {
+    background-image: 
+      linear-gradient(to right, rgba(59, 130, 246, 0.3) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(59, 130, 246, 0.3) 1px, transparent 1px);
+  }
+}
+
+.animate-grid-color {
+  animation: grid-color-cycle 15s ease-in-out infinite;
+}
+
+/* Default grid styles for neutral theme */
+.bg-grid-neutral {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
