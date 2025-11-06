@@ -4,6 +4,7 @@ import projectsData from "@/data/projects.json";
 import { useState } from "react";
 import ImageGalleryModal from "./ImageGalleryModal";
 import { InfiniteScrollText } from "./ui/InfiniteScrollText";
+import { ScrollReveal } from "./ui/ScrollReveal";
 
 interface Project {
   id: number;
@@ -51,26 +52,29 @@ export default function Projects({ className }: ProjectsProps) {
     <section id="projects" className={cn("py-20 bg-black dark:bg-black overflow-hidden", className)}>
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
-              My Projects
-            </span>
-          </h2>
-          <p className="text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto">
-            Here are some of the projects I've worked on. Each project represents a unique challenge and showcases different aspects of my development skills.
-          </p>
-        </div>
+        <ScrollReveal direction="up">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
+                My Projects
+              </span>
+            </h2>
+            <p className="text-lg sm:text-xl text-neutral-400 max-w-3xl mx-auto">
+              Here are some of the projects I've worked on. Each project represents a unique challenge and showcases different aspects of my development skills.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Projects List */}
         <div className="space-y-16">
           {visibleProjects.map((project, index) => (
-            <ProjectRow 
-              key={project.id} 
-              project={project} 
-              index={index} 
-              onImageClick={openImageModal}
-            />
+            <ScrollReveal key={project.id} direction="up" delay={index * 0.1}>
+              <ProjectRow 
+                project={project} 
+                index={index} 
+                onImageClick={openImageModal}
+              />
+            </ScrollReveal>
           ))}
         </div>
 

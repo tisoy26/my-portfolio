@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { IconBrandGithub, IconBrandLinkedin, IconBrandFacebook, IconMail } from "@tabler/icons-react";
 import emailjs from '@emailjs/browser';
+import { ScrollReveal } from "./ui/ScrollReveal";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,24 +47,27 @@ export default function Contact() {
     <div className="min-h-screen bg-black py-20 px-4" id="contact">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Get In Touch
-          </h2>
-          <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? Feel free to reach out!
-          </p>
-        </div>
+        <ScrollReveal direction="up">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Get In Touch
+            </h2>
+            <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
+              Have a project in mind or just want to chat? Feel free to reach out!
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="shadow-input rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-neutral-800 p-8">
-            <h3 className="text-2xl font-bold text-white mb-2">
-              Send me a message
-            </h3>
-            <p className="text-neutral-400 text-sm mb-8">
-              Fill out the form below and I'll get back to you as soon as possible.
-            </p>
+          <ScrollReveal direction="left" delay={0.2}>
+            <div className="shadow-input rounded-2xl bg-zinc-900/50 backdrop-blur-sm border border-neutral-800 p-8">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Send me a message
+              </h3>
+              <p className="text-neutral-400 text-sm mb-8">
+                Fill out the form below and I'll get back to you as soon as possible.
+              </p>
 
             <form onSubmit={handleSubmit}>
               <div className="mb-4 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
@@ -135,19 +139,21 @@ export default function Contact() {
               </button>
             </form>
           </div>
+          </ScrollReveal>
 
           {/* Contact Info */}
-          <div className="flex flex-col justify-center space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Let's Connect
-              </h3>
-              <p className="text-neutral-400 mb-8">
-                I'm always open to discussing new projects, creative ideas, or
-                opportunities to be part of your visions. Feel free to reach out
-                through any of these channels.
-              </p>
-            </div>
+          <ScrollReveal direction="right" delay={0.2}>
+            <div className="flex flex-col justify-center space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">
+                  Let's Connect
+                </h3>
+                <p className="text-neutral-400 mb-8">
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your visions. Feel free to reach out
+                  through any of these channels.
+                </p>
+              </div>
 
             {/* Social Links */}
             <div className="space-y-4">
@@ -191,6 +197,7 @@ export default function Contact() {
               </p>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </div>
