@@ -153,7 +153,7 @@ export default function ImageGalleryModal({
       </div>
 
       {/* Instructions */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/70 text-sm text-center">
+      <div className="hidden md:block absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/70 text-sm text-center">
         {hasMultipleImages ? (
           <>Press ESC to close • Use arrow keys or click buttons to navigate</>
         ) : (
