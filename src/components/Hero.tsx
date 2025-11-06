@@ -29,7 +29,7 @@ export default function Hero({
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
       
       {/* Content */}
-      <div className="relative z-20 flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-4 lg:px-8 gap-8 lg:gap-16 pt-56 lg:pt-0">
+      <div className="relative z-20 flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-4 lg:px-8 gap-8 lg:gap-16 pt-24 lg:pt-0">
         
         {/* Profile Image - First on Mobile, Second on Desktop */}
         <div className="flex-1 flex justify-center lg:justify-end items-end pb-8 lg:pb-16 lg:order-2">
