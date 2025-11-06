@@ -1,0 +1,227 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Learning Management System (LMS)",
+      "description": "A comprehensive learning management system designed for company employees to manage certifications, digital training modules, and track progress with AI-powered feedback and gamification features.",
+      "image": "/opticert/opticert-1.png",
+      "images": [
+        "/opticert/opticert-2.png",
+        "/opticert/opticert-3.png",
+        "/opticert/opticert-4.png"
+      ],
+      "technologies": ["Laravel", "React", "MySQL"],
+      "features": [
+        "Automated Certification Management",
+        "Digital Training Modules (Videos, Infographics, Quizzes)",
+        "Real-Time Monitoring & Reporting",
+        "QR Code Certificate Validation",
+        "Group Enrollment & Bulk Upload",
+        "Gamification System (Badges, Points, Leaderboards)",
+        "AI-Powered Feedback & Recommendations",
+        "Admin Dashboard with Visual Analytics"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Resort Booking Management System",
+      "description": "A full-featured resort booking platform that allows guests to browse accommodations, make reservations, and manage their bookings with an intuitive admin panel for resort management.",
+      "image": "/rms/rms-1.png",
+      "images":[
+      "/rms/rms-2.png",
+      "/rms/rms-3.png",
+      "/rms/rms-4.png",
+      "rms/rms-5.png",
+      "rms/rms-6.png",
+      "rms/rms-7.png"
+      
+      ],
+      "technologies": ["Laravel", "React", "MySQL"],
+      "features": ["Online Booking", "Room Availability",
+       "Payment Integration",
+       "Guest Management",
+       "Reservation Calendar",
+       "Email Notifications", 
+       "Pricing Management", 
+       "Booking Reports",
+       "virtual 360 tour Map Management",
+       "virtual 360 Tour Map"
+    ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "E-voting System",
+      "description": "A secure electronic voting system that incorporates facial recognition technology to ensure voter authentication and prevent fraud in digital elections.",
+      "image": "/evote/evote-2.png",
+      "images":[
+        "/evote/evote-1.png",
+        "/evote/evote-2.png",
+        "evote/evote-3.png"
+      ],
+      "technologies": ["PHP MVC", "MySQL", "Tailwind CSS"],
+      "features": ["Facial Recognition", "Voter Authentication", "Secure Voting", "Real-time Results", "Ballot Management", "Admin Dashboard", "Vote Encryption", "Audit Trail"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Facebook Messenger Auto-Responder Chatbot",
+      "description": "A keyword-based auto-responder chatbot for Facebook Messenger that enables automated customer engagement with support for multimedia messages, template cards, and intelligent keyword matching.",
+      "image": "/auto-responder/auto-responder-1.png",
+      "images":[
+        "/auto-responder/auto-responder-2.png",
+        "/auto-responder/auto-responder-3.png",
+        "/auto-responder/auto-responder-4.png",
+        "/auto-responder/auto-responder-5.png",
+        "/auto-responder/auto-responder-6.jfif"
+      ],
+      "technologies": ["PHP", "Facebook Graph API", "MySQL"],
+      "features": [
+        "Keyword-Based Auto Reply",
+        "Multiple Image Attachments",
+        "Template Card Messages",
+        "Quick Reply Buttons",
+        "Custom Response Templates",
+        "Keyword Management Dashboard",
+        "Conversation Analytics",
+        "Fallback Message Support"
+      ],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Carwash Management System",
+      "description": "A streamlined management system for car wash businesses to handle customer appointments, service tracking, and payment processing efficiently.",
+      "image": "/cms/cms-1.png",
+      "images":[
+        "/cms/cms-2.png",
+        "/cms/cms-3.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Tailwind CSS"],
+      "features": ["Appointment Booking", "Service Packages", "Customer Database", "Payment Processing", "Service History", "Staff Management", "SMS Reminders", "Revenue Reports"],
+      "liveUrl": "https://infinitycarcare.net/",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Food Ordering System",
+      "description": "An online food ordering platform that connects customers with restaurants, featuring menu browsing, order placement, and real-time order tracking.",
+      "image": "/froms/froms-1.png",
+      "images":[
+        "/froms/froms-2.png",
+        "froms/froms-3.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Tailwind CSS"],
+      "features": ["Online Menu", "Order Tracking", "Payment Gateway", "Customer Reviews", "Restaurant Dashboard", "Delivery Management", "Discount Coupons", "Order History"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "Flowershop Management System",
+      "description": "A specialized management system for flower shops to handle inventory, customer orders, seasonal arrangements, and delivery scheduling.",
+      "image": "/flowershop/flowershop-1.png",
+      "images":[
+        "/flowershop/flowershop-2.png",
+        "/flowershop/flowershop-3.png",
+        "/flowershop/flowershop-4.png",
+        "/flowershop/flowershop-5.png",
+        "/flowershop/flowershop-6.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Tailwind CSS"],
+      "features": ["Inventory Management", "Order Processing", "Delivery Scheduling", "Seasonal Catalog", "Custom Arrangements", "Customer Database", "Pricing Calculator", "Sales Reports"],
+      "liveUrl": "https://philippineflowerstore.com",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "title": "Web Based Realtime Queueing Management System",
+      "description": "A real-time queue management system that uses QR codes for efficient customer flow management in service-oriented businesses.",
+      "image": "/qms/qms-1.png",
+      "images":[
+        "/qms/qms-2.png",
+        "/qms/qms-3.png",
+        "/qms/qms-4.png",
+        "/qms/qms-5.png",
+        "/qms/qms-6.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Bootstrap 4"],
+      "features": ["QR Code Generation", "Real-time Queue", "Digital Display", "SMS Notifications", "Queue Analytics", "Service Priority", "Multiple Counters", "Wait Time Estimation"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Student Attendance Monitoring System with Auto Generated QR Code ID",
+      "description": "An automated attendance tracking system for educational institutions that generates unique QR codes for students to streamline the attendance process.",
+      "image": "/sams/sams-1.png",
+      "images":[
+        "/sams/sams-2.png",
+        "/sams/sams-3.png",
+        "/sams/sams-4.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Bootstrap 4"],
+      "features": ["Auto QR Generation", "Attendance Tracking", "Student Database", "Attendance Reports", "Parent Notifications", "Export to Excel"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "title": "Gym Management System",
+      "description": "A complete gym management solution that handles member registrations, workout tracking, equipment management, and membership billing.",
+      "image": "/gms/gms-4.png",
+      "images":[
+        "/gms/gms-1.png",
+        "/gms/gms-2.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Bootstrap 4"],
+      "features": ["Member Management", "Membership Plans", "Payment Processing", "Workout Tracking", "Equipment Inventory", "Trainer Scheduling", "Attendance Monitoring", "Revenue Analytics"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+      {
+      "id": 11,
+      "title": "Pet Management System",
+      "description": "A comprehensive pet care management system for veterinary clinics and pet owners to track pet health records, appointments, and medical history.",
+      "image": "/pams/pams-1.png",
+      "images":[
+        "/pams/pams-2.png",
+        "/pams/pams-3.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Tailwind CSS"],
+      "features": ["Pet Profiles", "Medical Records", "Appointment Scheduling", "Vaccination Tracking", "Prescription Management", "Owner Portal", "Reminder Notifications", "Health Reports"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "title": "Inventory Management System",
+      "description": "A robust inventory management system that helps businesses track stock levels, manage suppliers, and automate reordering processes.",
+      "image": "/ims/ims-1.png",
+      "images":[
+        "/ims/ims-2.png"
+      ],
+      "technologies": ["PHP", "MySQL", "Tailwind CSS"],
+      "features": ["Stock Tracking", "Supplier Management", "Auto Reordering", "Barcode Scanning", "Multi-warehouse", "Low Stock Alerts", "Purchase Orders", "Inventory Reports"],
+      "liveUrl": "",
+      "githubUrl": "",
+      "featured": false
+    }
+  ]
+}
